@@ -1,9 +1,8 @@
-# Phaser 3 Webpack Project Template
+# Phaser 3 Pong Game
 
-A Phaser 3 project template with ES6 support via [Babel 7](https://babeljs.io/) and [Webpack 4](https://webpack.js.org/)
-that includes hot-reloading for development and production-ready builds.
+This game was made using the template found in [Phaser 3 Webpack Template](https://github.com/photonstorm/phaser3-project-template.git) check it out if you want more information.
 
-Loading images via JavaScript module `import` is also supported.
+You can play the game in [Pong Game](https://pongunp.netlify.app/)
 
 ## Requirements
 
