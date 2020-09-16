@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
+const SRC = path.resolve(__dirname, "../")
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
@@ -22,12 +23,17 @@ module.exports = {
       {
         test: /\.(gif|png|jpe?g|svg|xml)$/i,
         use: "file-loader"
+      },
+      {
+        test: /\.mp3$/,
+        include: SRC,
+        loader: 'file-loader'
       }
     ]
   },
   plugins: [
     new CleanWebpackPlugin({
-      root: path.resolve(__dirname, "../")
+      root: SRC
     }),
     new webpack.DefinePlugin({
       CANVAS_RENDERER: JSON.stringify(true),
