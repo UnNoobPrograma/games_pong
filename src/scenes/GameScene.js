@@ -14,8 +14,8 @@ export default class GameScene extends Phaser.Scene {
 	restartGame() {
 		this.level = 1;
 		this.ballSpeed = 0;
-		this.playerSpeed = 5;
-		this.enemySpeed = 3;
+		this.playerSpeed = 8;
+		this.enemySpeed = 5;
 		this.playerPoints = 0;
 		this.enemyPoints = 0;
 		this.hitEnemy = false;
